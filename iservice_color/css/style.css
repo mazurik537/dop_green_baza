@@ -342,8 +342,12 @@
 float: left;
     position: fixed;
     height: 100%;
-    background-color: #f5f5f58c;
+    /*background-color: white;*/
     width: 100px;
     text-align: center;
 }
-    color: #ffffff6b;
+
+#top:hover {
+    background-color: #e0e0e091;
+}
+    color: #ffffff6b;}
