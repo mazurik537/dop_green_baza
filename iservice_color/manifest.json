@@ -1,0 +1,46 @@
+{
+ "manifest_version": 2,
+  "name": "iService_color",
+  "version": "3.6.1",
+  "permissions": ["management"],
+  "browser_action": {
+    "default_icon": "128.png"
+    
+  },
+  "icons": {
+    "128": "128.png"
+  },
+
+ "background": {
+    "scripts": ["background.js"]
+  },
+
+
+  "content_scripts": [
+    {
+      "matches": ["http://iservicecity.ru/crm/service/*"],
+      "js": ["js/jquery.min.js",
+              "JsBarcode.all.min.js",
+              "content.js",
+               "js/print.js",
+               "js/poisk.js",
+               "js/color_ballon.js",
+               "js/akt.js"],
+
+      "css": ["css/style.css"]
+    }
+  ],
+  "browser_action": {
+        "default_popup": "popup.html",
+        "js" : ["test.js"]
+    },
+  "permissions": [
+    "tabs", 
+    "http://iservicecity.ru/crm/service/*",
+    "storage",
+    "notifications"
+  ],
+  "web_accessible_resources": [
+  "128.png" ]
+ 
+}
