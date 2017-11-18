@@ -30,7 +30,10 @@ if (typeof theElement === "string") theElement = document.getElementById(theElem
 
 //---------------------------------------------------------------
 
-
+var top = document.getElementsByTagName("body");
+  var topVS = document.createElement('div');
+      topVS.id = "top";
+      top.insertBefore(topVS, top.firstChild);
 
 
 
