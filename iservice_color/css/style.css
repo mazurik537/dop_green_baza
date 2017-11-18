@@ -349,5 +349,6 @@ float: left;
 
 #top:hover {
     background-color: #e0e0e091;
+        cursor: n-resize;
 }
-    color: #ffffff6b;}
+
