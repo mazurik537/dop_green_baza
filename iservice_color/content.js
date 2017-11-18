@@ -1,3 +1,5 @@
+//отслеживание нажатия сочетания клавишь
+//номер 91 = cmd / номер 70 = F
 var isCtrl = false;
 document.onkeyup=function(e){ if(e.which == 91) isCtrl=false; }
 document.onkeydown=function(e) {
