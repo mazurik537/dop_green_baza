@@ -30,10 +30,10 @@ if (typeof theElement === "string") theElement = document.getElementById(theElem
 
 //---------------------------------------------------------------
 
-var top = document.getElementsByTagName("body");
+//добавление кнопки top
   var topVS = document.createElement('div');
       topVS.id = "top";
-      top.insertBefore(topVS, top.firstChild);
+      document.body.insertBefore(topVS, document.body.firstChild);
 
 
 
