@@ -342,13 +342,16 @@
 float: left;
     position: fixed;
     height: 100%;
-    /*background-color: white;*/
+   
     width: 100px;
     text-align: center;
+    display:none;
+      background-color: #e0e0e091;
+        cursor: n-resize;
 }
 
 #top:hover {
-    background-color: #e0e0e091;
+    background-color: #6f6d6f38;;
         cursor: n-resize;
 }
 
