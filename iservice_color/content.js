@@ -1,3 +1,22 @@
+// скприпт отслеживания прокручивания страницы
+window.onscroll = function() {
+  var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+   if (scrolled > "150") {
+  document.getElementById('top').style.display = "block";
+} else {
+  document.getElementById('top').style.display = "none";
+}
+}
+
+function TopF () {
+ // scrollToElement('poisk');
+  window.scrollTo(0,0);
+}
+
+
+
+
+
 //отслеживание нажатия сочетания клавишь
 //номер 91 = cmd / номер 70 = F
 var isCtrl = false;
@@ -36,7 +55,7 @@ if (typeof theElement === "string") theElement = document.getElementById(theElem
       document.body.insertBefore(topVS, document.body.firstChild);
 
 
-
+document.getElementById('top').onclick = TopF;
 
 function avtorizacia () {
   //------------------------ кнопки авторизации ------------------
