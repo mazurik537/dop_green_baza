@@ -14,6 +14,14 @@ function TopF () {
 }
 
 
+//добавление кнопки top
+  var topVS = document.createElement('div');
+      topVS.id = "top";
+      topVS.innerHTML = '<div class="name_top">Наверх</div>';
+      document.body.insertBefore(topVS, document.body.firstChild);
+
+
+document.getElementById('top').onclick = TopF;
 
 
 
@@ -25,37 +33,16 @@ document.onkeydown=function(e) {
     if(e.which == 91) isCtrl=true;
     if(e.which == 70 && isCtrl === true) {
         
-        scrollToElement('poisk'); 
+       window.scrollTo(0,0);
         poisk.focus();
         return false;
     }
   
 };
 
-function scrollToElement(theElement) {
-if (typeof theElement === "string") theElement = document.getElementById(theElement);
-
-    var selectedPosX = 0;
-    var selectedPosY = 0;
-
-    while (theElement != null) {
-        selectedPosX += theElement.offsetLeft;
-        selectedPosY += theElement.offsetTop;
-        theElement = theElement.offsetParent;
-    }
-
-    window.scrollTo(selectedPosX, selectedPosY);
-}
 
 //---------------------------------------------------------------
 
-//добавление кнопки top
-  var topVS = document.createElement('div');
-      topVS.id = "top";
-      document.body.insertBefore(topVS, document.body.firstChild);
-
-
-document.getElementById('top').onclick = TopF;
 
 function avtorizacia () {
   //------------------------ кнопки авторизации ------------------
